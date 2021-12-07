@@ -5,9 +5,9 @@ import Loadout from './payload.json';
 export default function Person() {
 
     // const [currentNPC, setCurrentNPC] = useState(0)
-    const [person, setPerson] = useState(Loadout[2].name)
-    const [description, setDescription] = useState(Loadout[2].description)
-    const [avatar, setavatar] = useState(Loadout[2].avatar)
+    const [person, setPerson] = useState(Loadout[6].name)
+    const [description, setDescription] = useState(Loadout[6].description)
+    const [avatar, setavatar] = useState(Loadout[6].avatar)
     console.log(Loadout[0].name)
 
     return(
@@ -26,5 +26,6 @@ export default function Person() {
                                 <div className="row">{description}</div>
                             </div>
                         </div>
+        
     )
 }
