@@ -2,7 +2,7 @@
 // import testimg from "https://robohash.org/facilisinsint.png?size=200x200&set=set1";
 import React, {useState} from 'react';
 
-import Person from './person';
+// import Person from './person';
 import Loadout from "./payload.json";
 
 
@@ -75,7 +75,7 @@ export default function Body() {
                 </div>
 
                 {/* people results */}
-                <Person/>
+                
                 
 
             </div>
