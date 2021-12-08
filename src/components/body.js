@@ -27,10 +27,10 @@ export default function Body() {
                 </div>
 
                 {/* banner */}
-                <div className="row justify-content-around bg-info">
+                <div className="row justify-content-around ">
                     <div className="col-md-12">
-                        <h1>The Person Finder</h1>
-                        <p>If you just can't find someone and need to know what they look like, you've come to the right place! Just type the name of the person you are looking for below into the search box!</p>
+                        <h1 style={{color:"darkblue"}}>The Person Finder</h1>
+                        <p stytle={{fontSize:"30px"}}>If you just can't find someone and need to know what they look like, you've come to the right place! Just type the name of the person you are looking for below into the search box!</p>
                     </div>
                 </div>
 
@@ -53,23 +53,20 @@ export default function Body() {
 
 
                                 <div key={key}>
-
-                                    
-                                    <div className="row bg-info mt-2" style={{maxHeight:"15vh", minHeight:"15vh"}}>
-                            {/* the img */}
-                            <div className="col-md-3 bg-secondary rounded" style={{maxHeight:"inherit"}}>
-                                <img alt="test" src={val.avatar} height="100%" width="100%" style={{objectFit:"contain"}}/>
-
-                            </div>
+                                    <div className="row mt-2" style={{maxHeight:"15vh", minHeight:"15vh"}}>
+                                        
+                                        {/* the img */}
+                                        <div className="col-md-3 bg-secondary rounded" style={{maxHeight:"inherit"}}>
+                                            <img alt="test" src={val.avatar} height="100%" width="100%" style={{objectFit:"contain"}}/>
+                                        </div>
                             
-                            {/* the info */}
-                            <div className="col-8 m-2">
-                                <div className="row">
-                                    <h4>{val.name}</h4>
-                                </div>
-                                <div className="row">{val.description}</div>
-                            </div>
-                        </div>
+                                        {/* the info */}
+                                        <div className="col-8 m-2">
+                                            <h4 className="row">{val.name}</h4>
+                                            <div className="row">{val.description}</div>
+                                        </div>
+
+                                    </div>
                                 </div>
                                 );
                         })}
